@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Products</string>
+    <string name="details">Details</string>
+    <string name="error">NETWORK ERROR</string>
+    <string name="success">SUCCESS</string>
+    <string name="loading">LOADING</string>
+    <string name="vendor">Vendor : </string>
+    <string name="scope">Scope : </string>
+    <string name="tags">Tags : </string>
+</resources>

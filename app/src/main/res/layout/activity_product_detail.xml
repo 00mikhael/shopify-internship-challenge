@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/details_coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/details_app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:fitsSystemWindows="true">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/details_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            app:elevation="6dp"
+            app:layout_collapseMode="pin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif-monospace"
+                android:text="@string/details"
+                android:textAllCaps="true"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+        </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <FrameLayout
+            android:id="@+id/product_image_frame"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/bg"
+            android:elevation="4dp"
+            android:fitsSystemWindows="true"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/details_product_image"
+                android:layout_width="250dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bag" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/product_image_frame"
+            android:background="#fff"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingEnd="8dp"
+            android:paddingStart="8dp"
+            android:paddingTop="0dp">
+
+
+            <TextView
+                android:id="@+id/details_product_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:lineSpacingExtra="8dp"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/textPrimary"
+                android:textSize="30sp"
+                tools:text="Really Expensive Bag" />
+
+            <TextView
+                android:id="@+id/details_product_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:lineSpacingExtra="8dp"
+                android:maxLines="1"
+                android:textColor="@color/productNameText"
+                android:textSize="20sp"
+                tools:text="A really expensive Bag" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@color/colorAccent"/>
+
+            <TextView
+                android:id="@+id/details_product_vendor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:lineSpacingExtra="8dp"
+                android:maxLines="1"
+                android:textColor="@color/productNameText"
+                android:textSize="20sp"
+                tools:text="Vendor : IPC global" />
+
+            <TextView
+                android:id="@+id/details_product_scope"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:lineSpacingExtra="8dp"
+                android:maxLines="1"
+                android:textColor="@color/productNameText"
+                android:textSize="20sp"
+                tools:text="Scope : global" />
+
+            <TextView
+                android:id="@+id/details_product_tags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+                android:lineSpacingExtra="8dp"
+                android:maxLines="1"
+                android:textColor="@color/productNameText"
+                android:textSize="20sp"
+                tools:text="Tags : Bags, Ankara, Native" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
+
