@@ -90,7 +90,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
                 android:lineSpacingExtra="8dp"
                 android:maxLines="1"
-                android:textColor="@color/productNameText"
+                android:textColor="@color/textColorSub"
                 android:textSize="20sp"
                 tools:text="A really expensive Bag" />
 
@@ -108,7 +108,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
                 android:lineSpacingExtra="8dp"
                 android:maxLines="1"
-                android:textColor="@color/productNameText"
+                android:textColor="@color/textColorSub"
                 android:textSize="20sp"
                 tools:text="Vendor : IPC global" />
 
@@ -119,7 +119,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
                 android:lineSpacingExtra="8dp"
                 android:maxLines="1"
-                android:textColor="@color/productNameText"
+                android:textColor="@color/textColorSub"
                 android:textSize="20sp"
                 tools:text="Scope : global" />
 
@@ -130,7 +130,7 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
                 android:lineSpacingExtra="8dp"
                 android:maxLines="1"
-                android:textColor="@color/productNameText"
+                android:textColor="@color/textColorSub"
                 android:textSize="20sp"
                 tools:text="Tags : Bags, Ankara, Native" />
 

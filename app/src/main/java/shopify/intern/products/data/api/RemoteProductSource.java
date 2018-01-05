@@ -1,5 +1,7 @@
 package shopify.intern.products.data.api;
 
+import android.util.Log;
+
 import java.util.List;
 
 import io.reactivex.Observer;
@@ -45,11 +47,13 @@ public class RemoteProductSource {
                     public void onNext(ProductResponse productResponse) {
                         List<Product> products = productResponse.getProducts();
                         callback.onApiResponse(products);
+                        Log.e("REMOTE SOURCE", products.toString());
                     }
 
                     @Override
                     public void onError(Throwable e) {
                         callback.apiError(e);
+                        Log.e("REMOTE SOURCE", e.toString());
                     }
 
                     @Override

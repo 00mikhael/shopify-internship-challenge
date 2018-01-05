@@ -4,46 +4,9 @@
     <color name="colorPrimaryDark">#F5F5F5</color>
     <color name="colorAccent">#96bf48</color>
 
-    <color name="textColorPrimaryLight">#ffffff</color>
-    <color name="textColorSecondaryLight">#F5F5F5</color>
-
-    <!--<color name="colorPrimaryDark">#FF9800</color>
-    <color name="colorAccent">#FF9800</color>-->
-    <color name="productNameText">#565656</color>
-    <color name="productPrice">#90A4AE</color>
+    <color name="textColorSub">#565656</color>
     <color name="textPrimary">#37474F</color>
     <color name="white">#FFFFFF</color>
     <color name="product_blue">#FFFFFF</color>
-
-    <color name="grey_800"></color>
-    <color name="blue_grey_400">#90A4AE</color>
-    <color name="blue_grey_700">#455a64</color>
-    <color name="blue_grey_900">#37474F</color>
-    <color name="product_yellow">#FFBB43</color>
-
-    <color name="product_green">#7ACE4C</color>
-    <color name="product_purple">#7460EE</color>
-    <color name="product_red">#B54B36</color>
-
-    <color name="textSub">#76818a</color>
-    <color name="Tex">#404547</color>
-    <color name="White">#fff</color>
-
-
-    <color name="colordevider">#f1f2f4</color>
-    <color name="colorbutton">#ff5254</color>
-    <color name="iconcolour">#9ba4ab</color>
-    <color name="strok">#e4e5ea</color>
-
-
-    <color name="green">#5ccc78</color>
-    <color name="red">#ea495f</color>
-    <color name="yellow">#f8d64e</color>
-    <color name="light_green">#1bac94</color>
-
-
-
-
-
 
 </resources>

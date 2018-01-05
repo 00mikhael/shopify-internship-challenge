@@ -33,7 +33,7 @@ public class RetrofitClient {
 
     // product list call
     public Observable<ProductResponse> getProductList(String fields, String page, String limit, String token) {
-        return apiService.getProductsList(fields, page, limit, token);
+        return apiService.getProductsList(/*fields, page, limit, token*/);
     }
 
     // product detail call

@@ -1,6 +1,7 @@
 package shopify.intern.products.data;
 
 import android.support.annotation.NonNull;
+import android.util.Log;
 
 import java.util.List;
 
@@ -33,6 +34,7 @@ public abstract class ProductSource {
             @Override
             public void initialData(List<Product> productList) {
                 onResponse(Resource.loading(productList));
+                Log.e("PRODUCT STORE", ""+ fields + page + limit + token);
                 mRemote.getProductList(fields, page, limit, token, apiCallbak);
             }
 
@@ -63,6 +65,7 @@ public abstract class ProductSource {
         apiCallbak = new ProductCallBack.ApiCallbak() {
             @Override
             public void onApiResponse(List<Product> productList) {
+                Log.e("ON API RESPONSE", productList.toString());
                 dbCallbak.finalData(productList);
             }
 

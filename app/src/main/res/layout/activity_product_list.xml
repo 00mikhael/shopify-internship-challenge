@@ -42,7 +42,7 @@
         android:layout_height="match_parent"
         android:clipToPadding="false"
         app:spanCount="@integer/product_columns"
-        app:layoutManager="StaggeredGridLayoutManager"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
         app:layout_behavior="@string/appbar_scrolling_view_behavior"
         tools:listitem="@layout/item_product" />
 

@@ -52,7 +52,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ViewHold
 
         public ViewHolder(@NonNull View view) {
             super(view);
-            title = view.findViewById(R.id.product_title);
+            title = view.findViewById(R.id.product_titlee);
             description = view.findViewById(R.id.product_description);
             image = view.findViewById(R.id.product_image);
             container = view.findViewById(R.id.product_container);

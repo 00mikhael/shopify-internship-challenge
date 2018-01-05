@@ -1,5 +1,7 @@
 package shopify.intern.products.data;
 
+import android.util.Log;
+
 import java.util.List;
 
 import shopify.intern.products.AppConstants;
@@ -41,11 +43,14 @@ public class Repository implements RepositoryInterface {
             @Override
             protected void onResponse(Resource<List<Product>> resource) {
                 callback.onResponse(resource);
+
+                Log.e("PRODUCT LIST", "ON RESPONSE CALLED");
             }
 
             @Override
             protected void onErr(Resource<List<Product>> resource) {
                 callback.onResponse(resource);
+                Log.e("PRODUCT LIST", "ON ERROR CALLED");
             }
 
             @Override
